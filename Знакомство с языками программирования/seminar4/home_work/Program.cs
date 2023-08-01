@@ -9,7 +9,7 @@ namespace HomeworkForTheSecondLecture
         static void Main(string[] args)//Что бы запустить определенную задачу, раскомментируй нужный task :)
         {
             //task25();
-            task27();
+            //task27();
             //task29();
         }
         static void task25()
