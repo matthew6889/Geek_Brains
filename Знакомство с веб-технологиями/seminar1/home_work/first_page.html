@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cамара городок</title>
+    <style>
+        body::before 
+        {
+            content: '';
+            position: fixed; /* Фиксируем на одном месте */
+            left: 0; right: 0; /* Вся ширин */
+            top: 0; bottom: 0; /* Вся высота */
+            z-index: -1; /* Фон ниже текста */
+            /* Параметры фона */
+            background: url(https://cdn.tripster.ru/thumbs2/ffa231d0-7236-11ed-ba4a-068010d820b8.1220x600.jpeg) center / cover no-repeat;
+            filter: blur(5px); /* Размытие */
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <br>
+    
+    <h1 class="maintitle" align="center">
+        <strong>Самара-город курорт</strong> 
+    </h1>
+    
+    <h2 align="center">
+        Эта страница расскажент вам о городе Самара.
+    </h2>
+    
+    <p>
+        <h3 class="history"><strong>История</strong></h3>
+
+        <p class="text">
+            Старейшее письменное упоминание о населенном пункте на слиянии рек Самара и Волга было сделано арабским путешественником Ибн-Фадланом в 921 году.
+            <br>
+            А в 1367 году город - пристань Samar был отмечен на карте венецианских купцов Пицигано.
+            <br>
+            Официальной датой основания русского города Самара считается 1586 год, когда по приказу царя Федора Иоанновича, воеводой князем Григорием Осиповичем Засекиным была построена самарская крепость.
+            <br>
+            Административное значение города еще более возросло с основанием в 1851 году Самарской губернии. С тех пор, уже более 150 лет город является столицей одного из самых экономически мощных регионов России.
+        </p >
+
+        <a href="https://samadm.ru/about/history/#:~:text=Официальной%20датой%20основания%20русского%20города,в%201851%20году%20Самарской%20губернии.">Больше информации здесь</a>
+    </p>
+    
+    <p>
+        <h3 class="facts"><strong>Интересные факты</strong></h3>
+
+        <ul class="spisok">
+            <li>Здание самарского вокзала – самая высокая постройка такого назначения в Европе (см. <a href="http://стофактов.рф/7-интересных-фактов-о-вокзалах/">интересные факты о вокзалах</a>).</li>
+            <li>Самарская площадь Куйбышева является крупнейшей европейской площадью и седьмой по размеру в мире. Ее площадь составляет 174 000 квадратных метров.</li>
+            <li>Все российские и советские космонавты отправлялись в космос благодаря ракетам, сконструированным в Самаре.</li>
+            <li>
+                Одно из самых необычных зданий в Самаре – так называемая «Дача со слонами», построенная самарским купцом по его собственному проекту. 
+                <br>
+                С домом связано несколько городских легенд: о некой девушке, якобы покончившей с собой, а также о намерении взорвать скульптуры слонов в 30-е годы прошлого века.
+            </li>
+        </ul>
+
+        <a href="http://стофактов.рф/19-интересных-фактов-о-самаре/">Больше фактов можно посмотреть здесь</a>
+    </p>
+
+    <p>
+        <h3 class="top"><strong>Топ достопримечательностей Самары</strong></h3>
+
+        <ol class="numeric">
+            <li><a style="color: black;" href="https://www.google.com/search?client=opera-gx&sca_esv=563166832&sxsrf=AB5stBjdg6XJBnltUUySXc1z4qFlcXBbdQ:1694032664248&q=Самарская+набережная&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj5zcK565aBAxVJKBAIHfuSC58Q0pQJegQIDRAB&biw=1879&bih=939&dpr=1">Самарская набережная</a></li>
+            <li><a style="color: black;" href="https://www.google.com/search?q=Жигулевский+пивоваренный+завод&tbm=isch&ved=2ahUKEwiwrLm-65aBAxW7FxAIHdtWDQ4Q2-cCegQIABAA&oq=Жигулевский+пивоваренный+завод&gs_lcp=CgNpbWcQDDIFCAAQgAQyBwgAEBgQgAQyBwgAEBgQgAQyBwgAEBgQgAQ6BAgjECdQnwdYnwdgtg5oAHAAeACAAVOIAZcBkgEBMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=IuP4ZLCTI7uvwPAP2621cA&bih=939&biw=1879&client=opera-gx">Жигулевский пивоваренный завод</a></li>
+            <li><a style="color: black;" href="https://www.google.com/search?q=Музей+«Самара+Космическая»&tbm=isch&ved=2ahUKEwi9tfPf65aBAxWcHhAIHQKDAN0Q2-cCegQIABAA&oq=Музей+«Самара+Космическая»&gs_lcp=CgNpbWcQDDIHCAAQGBCABDoECCMQJ1C5BVi5BWDwC2gAcAB4AIABTYgBlAGSAQEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=aOP4ZL3hLJy9wPAPgoaC6A0&bih=939&biw=1879&client=opera-gx">Музей «Самара Космическая»</a></li>
+            <li><a style="color: black;" href="https://www.google.com/search?q=Площадь+Куйбышева&tbm=isch&ved=2ahUKEwiYiY7m65aBAxUnIBAIHU71CWYQ2-cCegQIABAA&oq=Площадь+Куйбышева&gs_lcp=CgNpbWcQDDIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBwgAEBgQgAQyBwgAEBgQgAQyBwgAEBgQgAQyBwgAEBgQgAQyBwgAEBgQgAQ6BAgjECdQygRYygRg0gloAHAAeACAAU-IAZIBkgEBMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=deP4ZNj6LafAwPAPzuqnsAY&bih=939&biw=1879&client=opera-gx">Площадь Куйбышева</a></li>
+        </ol>
+
+        <a href="https://top10.travel/dostoprimechatelnosti-samary/">Больше мест можно посмотреть здесь</a>
+    </p>
+    <br>
+    <br>
+    <br>
+    <footer align="center">© 2023</footer>
+</body>
+</html>
