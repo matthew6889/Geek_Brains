@@ -4,7 +4,7 @@ h1.maintitle
 }
 p.text
 {
-    background: #daf1f585; /* Цвет фона под заголовком */
+    background: #daf1f5b7; /* Цвет фона под заголовком */
     color: rgb(0, 0, 0); /* Цвет текста */
     padding: 6px;  /*Поля вокруг текста */
     border-radius: 10px;
@@ -22,7 +22,7 @@ h3.facts
 }
 ul.spisok
 {
-    background: #daf1f585; /* Цвет фона под заголовком */
+    background: #daf1f5b7; /* Цвет фона под заголовком */
     color: rgb(0, 0, 0); /* Цвет текста */
     height: 176px;  /*Высота блока */
     width: 1000px;  /*Ширина блока */
@@ -35,9 +35,14 @@ h3.top
 }
 ol.numeric
 {
-    background: #daf1f585; /* Цвет фона под заголовком */
+    background: #daf1f5b7; /* Цвет фона под заголовком */
     color: rgb(0, 0, 0); /* Цвет текста */
     height: 93px;  /*Высота блока */
     width: 280px;  /*Ширина блока */
     border-radius: 10px;
+}
+img.firstphoto
+{
+    height: 250px;  /*Высота блока */
+    width: 250px;  /*Ширина блока */
 }
