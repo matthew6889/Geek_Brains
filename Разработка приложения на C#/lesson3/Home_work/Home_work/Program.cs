@@ -18,7 +18,7 @@ Console.WriteLine($"Количество выходов: {FindPath(1, 1)}");
 
 int FindPath(int i, int j)
 {
-    //Console.WriteLine(labirynth1[i, j]);
+
     if (labirynth1[i, j] == 0) _path.Push(new(i, j));
     
     int exit = 0;
