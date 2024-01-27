@@ -10,19 +10,26 @@ namespace Task3
 {
     internal class Server
     {
+        private static bool exitRequested = false;
+
         public static void AcceptMsg()
         {
             IPEndPoint ep = new IPEndPoint(IPAddress.Any, 0);
             UdpClient udpClient = new UdpClient(16874);
             Console.WriteLine("Сервер ожидает сообщение");
-            while (true)
+
+            Task exitTask = Task.Run(() =>
+            {
+                Console.ReadKey();
+                exitRequested = true;
+            });
+
+            while (!exitRequested)
             {
 
                 byte[] buffer = udpClient.Receive(ref ep);
                 string data = Encoding.UTF8.GetString(buffer);
-                /*Message msg = Message.fromJson(data);
-                Console.WriteLine(msg.ToString());*/
-                Thread tr = new Thread(() =>
+                Task.Run(() =>
                 {
                     Message msg = Message.fromJson(data);
                     Console.WriteLine(msg.ToString());
@@ -31,7 +38,7 @@ namespace Task3
                     byte[] responseDate = Encoding.UTF8.GetBytes(responseMsgJs);
                     udpClient.Send(responseDate, ep);
                 });
-                tr.Start();
+                exitTask.Wait();
             }
         }
     }

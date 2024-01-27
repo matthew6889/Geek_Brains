@@ -14,6 +14,15 @@ namespace Task3
         {
             IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 16874);
             UdpClient udpClient = new UdpClient();
+
+            while (true)
+            {
+                Console.WriteLine("Введите сообщение или Exit для завершения:");
+                string text = Console.ReadLine();
+
+                if (text.ToLower() == "exit")
+                    break;
+            }
             Message msg = new Message(name, "Привет");
             string responseMsgJs = msg.toJson();
             byte[] responseData = Encoding.UTF8.GetBytes(responseMsgJs);
